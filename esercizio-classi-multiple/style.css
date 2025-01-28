@@ -1,0 +1,18 @@
+.p {
+    font-family: Verdana;
+    color: red;
+}
+
+.blackborder {
+    border: 1px;
+    width: 400px;
+}
+
+.rounded {
+    border-radius: 5px;
+
+}
+
+.shadowed {
+    box-shadow: 0px 4px 8px rgb(182, 28, 28), 0px -4px 10px rgb(182, 40, 40);
+}
