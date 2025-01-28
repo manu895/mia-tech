@@ -4,5 +4,8 @@
 
 .underline {
     text-decoration: underline;
+}
+
+.p {
     font-size: 30px;
 }
