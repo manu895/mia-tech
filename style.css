@@ -1,0 +1,16 @@
+h2{
+    text-align: center;
+    color: brown;
+}
+
+p{
+    text-align: center;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+    
