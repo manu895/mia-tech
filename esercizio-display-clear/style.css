@@ -1,0 +1,13 @@
+p {
+
+    border: 15px;
+    background-color: blanchedalmond;
+    
+    
+}
+img {
+    float: right;
+}
+.under-immage{
+    clear:both;
+}
