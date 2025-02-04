@@ -1,0 +1,15 @@
+:root {
+    --blue: #0b25e9;
+    --whyte: #ffffff;
+}
+
+h2 {
+    border-bottom: 4px solid var(--blue)
+}
+
+.container {
+    color: var(--whyte);
+    background-color: var(--blue);
+    padding: 20px;
+    border-color: var(--whyte);
+}
