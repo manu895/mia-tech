@@ -1,0 +1,12 @@
+:root {
+    --blue: #0b25e9;
+    --whyte: #ffffff;
+}
+
+h2 {
+    border-bottom: 4px solid var(--blue)
+}
+
+img {
+    padding-left: 80%;
+}
