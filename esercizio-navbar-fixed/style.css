@@ -1,0 +1,10 @@
+div.fixed {
+    background-color: #a0a0bc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    
+}
