@@ -1,9 +1,10 @@
 #container{
-    width: 400px;
+    width: 300px;
 }
 
-.square{
-    width: 200px;
-    height: 200px;
+.quadrato{
+    width: 30%;
+    padding-top: 30%;  
     background: yellowgreen;
+  
 }
