@@ -1,17 +1,29 @@
 .square {
     opacity: 1;
+    
 }
 
 .square {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    
     background-color: red;
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     right: 20px;
     transition: opacity 0.5s ease;
+    left: 40px;
+    top: 150px;
+    border: 10px solid green;
+    margin: 10 px;
+    padding: 10px;
+    
 }
-
 .content {
-    height: 200vh;
+    position: relative;
+    top: 125px;
+    width: 400px;
+    height: 200px;
+    margin-top: 800px;
+    float: right;
 }
