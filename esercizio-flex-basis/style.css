@@ -1,0 +1,20 @@
+.flex_box {
+    display: flex;
+    background-color: rgb(255, 109, 30);
+    align-items: stretch;
+
+}
+
+.flex_box div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 100px;
+}
+
+.item2{
+    flex-basis: 500px;
+}
+
