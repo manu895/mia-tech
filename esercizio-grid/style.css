@@ -1,0 +1,13 @@
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: yellowgreen;
+    padding: 25px;
+}
+
+.grid_container div{
+    background-color: antiquewhite;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid black;
+}
