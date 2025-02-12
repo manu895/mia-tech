@@ -1,0 +1,28 @@
+.grid-container{
+    
+    height: 800px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 6px;
+    border: 1px solid black ;
+    padding: 5px;
+    background-color: yellow;
+    border: 10px solid blue;
+    align-content: center;
+    justify-content: center;
+}
+.grid-container div{
+    border: 2px solid black;
+    text-align: center;
+    padding: 15px;
+    line-height: 30px;
+    
+
+
+}
+
+.item1-2-3-4-5{
+
+    grid-column: span 5;
+
+}
