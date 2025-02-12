@@ -1,0 +1,19 @@
+.grid-container{
+    display: grid;   
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 6px;
+    border: 1px solid black ;
+    padding: 5px;
+    background-color: yellow;
+    border: 10px solid blue;
+
+}
+
+.grid-container div{
+    border: 2px solid black;
+    text-align: center;
+    padding: 15px;
+    line-height: 70px;
+
+}
