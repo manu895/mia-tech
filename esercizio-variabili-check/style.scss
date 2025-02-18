@@ -1,0 +1,38 @@
+// Variabili SASS
+$primary-color: #e6ecef;
+$hover-color: #ff0000;
+$text-color: black;
+$padding: 15px;
+
+
+
+.navbar {
+    background-color: $primary-color;
+    padding: 15px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    li {
+
+        a {
+
+            padding: 6px 12px;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            font-size: 18px;
+            color: $text-color;
+
+        }
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}
