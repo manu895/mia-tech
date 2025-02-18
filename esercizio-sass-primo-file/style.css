@@ -1,0 +1,14 @@
+body p {
+  font-size: 1, 2em;
+  margin-bottom: 10px;
+}
+body span {
+  font-size: 2em;
+  padding-left: 10px;
+}
+body a {
+  color: blue;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
