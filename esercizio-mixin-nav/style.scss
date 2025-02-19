@@ -1,0 +1,63 @@
+@mixin theme($bg-color, $text-color, $hover-bg) {
+    background-color: $bg-color;
+
+ ul {
+
+li {
+
+ a {
+
+  color: $text-color;
+
+     }
+
+&:hover {
+
+     background-color: $hover-bg;
+
+         }
+
+     }
+    }
+}
+
+
+
+.navbar {
+    background-color: #e6ecef;
+    padding: 15px;
+
+ ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+li {
+
+ a {
+
+         padding: 6px 12px;
+         text-decoration: none;
+         transition: 0.3s ease-in-out;
+        font-size: 18px;
+         color: black;
+
+        }
+
+     &:hover {
+        background-color: #ff0000
+        }
+
+     &.light-theme {
+            @include theme(#e6ecef, black, red); // Tema chiaro
+        }
+
+     &.dark-theme {
+            @include theme(#000000, white, yellow); // Tema scuro
+        }
+    }
+}
