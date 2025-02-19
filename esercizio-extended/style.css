@@ -1,0 +1,30 @@
+.bg-gray, .navbar li:last-child {
+  background-color: #e7e7e7;
+}
+
+.navbar {
+  padding: 15px;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.navbar li:last-child {
+  border-color: #333333;
+}
+.navbar li a {
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+  color: black;
+}
+.navbar li:hover {
+  background-color: #ff0000;
+}
+
+/*# sourceMappingURL=style.css.map */
