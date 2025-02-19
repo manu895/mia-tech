@@ -1,0 +1,47 @@
+.bg-gray, .navbar li:last-child {
+  background-color: #e7e7e7;
+}
+
+.navbar {
+  padding: 15px;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.navbar li:last-child {
+  border-color: #333333;
+}
+.navbar li a {
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+  color: black;
+}
+.navbar li:hover {
+  background-color: #ff0000;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.firstbox {
+  background-color: #f1c40f;
+}
+
+.secondbox {
+  background-color: #3498db;
+}
+
+/*# sourceMappingURL=style.css.map */
