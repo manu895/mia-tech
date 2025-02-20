@@ -1,32 +1,31 @@
-.navbar {
-    background-color: #e6ecef;
-    padding: 15px;
+$hovercolor: #ff0000;
+$secondary-color: #333;
+$font-size: 18px;
+$noHover: true;
 
+
+nav {
     ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    li {
-
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      li {
+        text-align: center;
         a {
-
-            padding: 6px 12px;
-            text-decoration: none;
-            transition: 0.3s ease-in-out;
-            font-size: 18px;
-            color: black;
-
+          text-decoration: none;
+          color: black;
+          font-size: $font-size;
+          &:hover {
+            @if $noHover == true {
+              color: $hovercolor;
+            } @else {
+              color: blue;
+            }
+          }
         }
-
-        &:hover {
-            background-color: #ff0000
-            
-
         }
+      }
     }
-}
