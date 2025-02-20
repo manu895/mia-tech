@@ -1,13 +1,13 @@
 
-@use 'variables';
+@use 'variable';
 
 .container {
     display: flex;
     justify-content: center;
-    background-color: $secondary-color;
-    border: 2px $third-color;
+    background-color: variable.$secondary-color;
+    border: 2px variable.$third-color;
 }
 
 p {
-    color: $primary-color;
+    color: variable.$primary-color;
 }

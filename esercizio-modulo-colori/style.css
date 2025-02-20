@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(189, 176, 176);
+  border: 2px rgb(30, 153, 65);
+}
+
+p {
+  color: rgb(104, 160, 199);
+}
+
+/*# sourceMappingURL=style.css.map */
