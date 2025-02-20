@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #e6ecef;
+  padding: 15px;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.navbar li a {
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+  color: black;
+}
+.navbar li:hover {
+  background-color: #ff0000;
+}
+.navbar .home a {
+  background-color: #ff00ff;
+}
+.navbar .home:hover {
+  background-color: #cc00cc;
+}
+.navbar .blog a {
+  background-color: #00ff00;
+}
+.navbar .blog:hover {
+  background-color: #00cc00;
+}
+.navbar .about a {
+  background-color: #0000ff;
+}
+.navbar .about:hover {
+  background-color: #0000cc;
+}
+.navbar .contact a {
+  background-color: #ff6600;
+}
+.navbar .contact:hover {
+  background-color: rgb(204, 81.6, 0);
+}
+
+/*# sourceMappingURL=style.css.map */

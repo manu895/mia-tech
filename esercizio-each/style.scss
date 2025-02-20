@@ -1,0 +1,43 @@
+
+$colors: ('home': #ff00ff,'blog': #00ff00,'about': #0000ff,'contact': #ff6600 );
+
+
+.navbar {
+  background-color: #e6ecef;
+  padding: 15px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  li {
+    a {
+      padding: 6px 12px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+      font-size: 18px;
+      color: black;
+    }
+
+    &:hover {
+      background-color: #ff0000;
+    }
+  }
+
+
+  @each $name, $color in $colors {
+    .#{$name} {
+      a {
+        background-color: $color;
+      }
+      &:hover {
+        background-color: adjust-color($color, $lightness: -10%);
+      }
+    }
+  }
+}
