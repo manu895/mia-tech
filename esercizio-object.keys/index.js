@@ -1,9 +1,9 @@
 let student = {
-    
-    name: "Giovanni",
-    age: 16,
-    grade: "10th",
-    school: "Liceo Scientifico"
+
+    name: "Manuel",
+    age: 33,
+    grade: "13",
+    school: "Istituto tecnico"
 };
 
 
