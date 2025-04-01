@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione localStorage e sessionStorage</title>
+</head>
+<body>
+
+    <h1>Gestione localStorage e sessionStorage</h1>
+
+    <button onclick="saveToLocalStorage('utenteLocal', 'Manu')">Salva Utente in localStorage</button>
+
+    <button onclick="getFromLocalStorage('utenteLocal')">Recupera Utente da localStorage</button>
+
+    <button onclick="removeFromLocalStorage('utenteLocal')">Rimuovi Utente da localStorage</button>
+
+    <button onclick="saveToSessionStorage('utenteSession', 'Anna')">Salva Utente in sessionStorage</button>
+
+    <button onclick="getFromSessionStorage('utenteSession')">Recupera Utente da sessionStorage</button>
+
+    <button onclick="removeFromSessionStorage('utenteSession')">Rimuovi Utente da sessionStorage</button>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
