@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estensione delle Dimensioni</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    
+    tailwind.config = {
+      theme: {
+        extend: {
+          spacing: {
+            '128': '32rem',  
+            '144': '36rem',  
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="p-6">
+
+  <div class="max-w-lg mx-auto space-y-4">
+    
+    <div class="bg-blue-500 text-white p-4 mb-128">
+      Questo div ha un margine inferiore personalizzato (32rem).
+    </div>
+
+    
+    <div class="bg-green-500 text-white p-144">
+      Questo div ha un padding personalizzato (36rem).
+    </div>
+
+    
+    <div class="bg-red-500 text-white p-8 mb-128">
+      Questo div ha un padding standard e un margine inferiore personalizzato.
+    </div>
+  </div>
+
+</body>
+</html>
