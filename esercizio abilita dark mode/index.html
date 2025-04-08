@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modalità Scura con Tailwind</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    
+    tailwind.config = {
+      darkMode: 'media', 
+    }
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 dark:text-white p-6">
+
+  <div class="space-y-6">
+    
+    <h1 class="text-4xl font-bold text-customBlue dark:text-customYellow">
+      Titolo con Modalità Scura
+    </h1>
+
+    
+    <p class="text-lg text-customGreen dark:text-customRed">
+      Questo paragrafo cambierà colore in base alla modalità attiva.
+    </p>
+
+    
+    <a href="#" class="text-customRed hover:text-customBlue dark:text-customBlue dark:hover:text-customRed">
+      Link che cambia al passaggio del mouse, sia in modalità chiara che scura
+    </a>
+  </div>
+
+</body>
+</html>
