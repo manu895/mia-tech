@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Mode Semplice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    
+    tailwind.config = {
+      darkMode: 'media',
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-800 text-black dark:text-white p-6">
+
+  <div class="max-w-lg mx-auto space-y-4">
+    
+    <h1 class="text-3xl font-bold text-center">
+      Modalità Chiara e Scura
+    </h1>
+
+    <p class="text-center">
+      Il testo cambia automaticamente in base alla modalita'.
+    </p>
+
+    <a href="#" class="text-blue-600 dark:text-blue-400 block text-center mt-4">
+      Scopri di più!
+    </a>
+  </div>
+
+</body>
+</html>
