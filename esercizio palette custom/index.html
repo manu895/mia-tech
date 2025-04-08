@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palette Personalizzata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        customBlue: '#1e40af',
+                        customGreen: '#10b981',
+                        customRed: '#ef4444',
+                        customYellow: '#f59e0b',
+                        customGray: '#6b7280',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+
+    <div class="space-y-4 text-center">
+        <button class="bg-customBlue text-white py-2 px-4 rounded hover:bg-customGreen">
+            Pulsante Blu
+        </button>
+        <button class="bg-customGreen text-white py-2 px-4 rounded hover:bg-customYellow">
+            Pulsante Verde
+        </button>
+        <button class="bg-customRed text-white py-2 px-4 rounded hover:bg-customGray">
+            Pulsante Rosso
+        </button>
+        <button class="bg-customYellow text-white py-2 px-4 rounded hover:bg-customBlue">
+            Pulsante Giallo
+        </button>
+    </div>
+
+</body>
+
+</html>
