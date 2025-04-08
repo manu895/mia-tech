@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colori di Testo Personalizzati</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            customBlue: '#1e40af',    
+            customGreen: '#10b981',   
+            customRed: '#ef4444',     
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <div class="space-y-6">
+    
+    <h1 class="text-customBlue text-4xl font-bold">Titolo in Blu Personalizzato</h1>
+
+    
+    <p class="text-customGreen text-lg">Paragrafo con il testo verde personalizzato.</p>
+
+    
+    <a href="#" class="text-customRed hover:text-customBlue">Link con colore rosso che cambia colore al passaggio del cursore</a>
+  </div>
+
+</body>
+</html>
