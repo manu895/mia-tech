@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stili disabled</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4">
+    <div class="max-w-md mx-auto">
+        <label for="nome" class="block text-sm font-medium text-gray-700">Nome:</label>
+        <input type="text" id="nome" disabled
+            class="mt-1 p-2 w-full border rounded-md bg-gray-100 text-gray-500 cursor-not-allowed">
+
+        <label for="cognome" class="block mt-4 text-sm font-medium text-gray-700">Cognome:</label>
+        <input type="text" id="cognome" disabled
+            class="mt-1 p-2 w-full border rounded-md bg-gray-100 text-gray-500 cursor-not-allowed">
+
+        <button disabled
+            class="mt-4 p-2 bg-gray-300 text-gray-500 rounded-md cursor-not-allowed">Invia</button>
+    </div>
+</body>
+
+</html>
