@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+.card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+
+  .btn-secondary {
+    @apply bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded;
+  }
