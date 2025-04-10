@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout condizionale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4">
+    <div class="md:flex gap-4">
+        <div class="w-64 bg-blue-200 p-4 border border-blue-400">
+            Colonna 1 (sempre visibile)
+        </div>
+        <div class="hidden md:block w-64 bg-green-200 p-4 border border-green-400">
+            Colonna 2 (visibile solo su schermi medi e grandi)
+        </div>
+        <div class="hidden lg:block w-64 bg-yellow-200 p-4 border border-yellow-400">
+            Colonna 3 (visibile solo su schermi grandi)
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <button class="md:hidden bg-gray-200 p-2 rounded-md">Mostra menu (solo mobile)</button>
+        
+        <div class="hidden md:block bg-gray-200 p-2 rounded-md">Menu (visibile su desktop)</div>
+    </div>
+</body>
+
+</html>
