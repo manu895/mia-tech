@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerarchia stili</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .componente {
+            @apply text-lg font-semibold text-blue-600;
+        }
+    </style>
+</head>
+
+<body class="p-4 text-base text-gray-700">
+    <div class="componente">
+        Questo è un componente con stili personalizzati.
+    </div>
+
+    <div class="componente" style="color: red;">
+        Questo è un componente con stili inline.
+    </div>
+
+    <p>
+        Questo è un paragrafo con stili di base.
+    </p>
+</body>
+
+</html>
