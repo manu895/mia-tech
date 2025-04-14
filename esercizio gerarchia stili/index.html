@@ -4,27 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerarchia stili</title>
+    <title>Personalizzazione Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .componente {
-            @apply text-lg font-semibold text-blue-600;
+        @layer base {
+            body {
+                @apply bg-gray-100;
+            }
+        }
+
+        @layer components {
+            .btn-primary {
+                @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+            }
+
+            .card {
+                @apply bg-white rounded-lg shadow-md p-6;
+            }
+        }
+
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        @theme {
+            --color-primary: #3490dc;
+            --font-display: 'Oswald', sans-serif;
+        }
+
+        .custom-primary {
+            background-color: var(--color-primary);
+        }
+
+        .custom-font {
+            font-family: var(--font-display);
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
-<body class="p-4 text-base text-gray-700">
-    <div class="componente">
-        Questo è un componente con stili personalizzati.
+<body class="p-4">
+    <div class="card">
+        <h2 class="text-2xl font-bold custom-font text-shadow">Titolo personalizzato</h2>
+        <p>Contenuto della card.</p>
+        <button class="btn-primary custom-primary mt-4">Pulsante personalizzato</button>
     </div>
-
-    <div class="componente" style="color: red;">
-        Questo è un componente con stili inline.
-    </div>
-
-    <p>
-        Questo è un paragrafo con stili di base.
-    </p>
 </body>
 
 </html>
