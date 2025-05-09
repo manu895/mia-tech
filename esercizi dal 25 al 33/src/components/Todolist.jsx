@@ -1,16 +1,24 @@
 import React, { useState, useCallback, useRef, useEffect, useMemo, useContext } from 'react';
-import useFetch from '../hooks/useFetch';
-// import useFilteredTodos from '../hooks/useFilteredTodos'; // viene surclassato da useMemo
 import { TodoContext } from '../contexts/Todocontext';
+import { Link, useSearchParams } from 'react-router-dom'; 
 
 function Todolist() {
   const { todos, loading, error } = useContext(TodoContext);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams(); 
+  const [searchTerm, setSearchTerm] = useState(() => {  
+    return searchParams.get('search') || '';
+  });
   const searchInputRef = useRef(null);
 
   const handleSearchChange = useCallback((event) => {
-    setSearchTerm(event.target.value);
-  }, []);
+    const newSearchTerm = event.target.value;
+    setSearchTerm(newSearchTerm);
+    if (newSearchTerm) {
+      setSearchParams({ search: newSearchTerm });
+    } else {
+      setSearchParams({}); 
+    }
+  }, [setSearchParams]);
 
   useEffect(() => {
     if (searchInputRef.current) {
@@ -49,7 +57,9 @@ function Todolist() {
       <ul>
         {filteredTodos && filteredTodos.map(todo => (
           <li key={todo.id}>
-            {todo.title} {todo.completed ? '(Completato)' : '(Da completare)'}
+            <Link to={`/todos/${todo.id}`}>
+              {todo.title} {todo.completed ? '(Completato)' : '(Da completare)'}
+            </Link>
           </li>
         ))}
         {!loading && todos && filteredTodos.length === 0 && (
